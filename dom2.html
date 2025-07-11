@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #message
+        {
+            font-size: 20px;
+            color:black;
+            margin:20px;
+        }
+    </style>
+</head>
+<body>
+<h2>DOM EXAMPLE</h2>
+<p id="message">Welcome to JS</p>
+<button onclick="updateText()">Change Message</button>
+<button onclick ="changeStyle()">Change Style</button>
+<button onclick ="toggleMessage()">Hide/Show</button>
+
+<script>
+    function updateText()
+    {
+      document.getElementById("message").innerText = "Hello, this is my class";
+    }
+
+    function changeStyle()
+    {
+        let msg = document.getElementById("message");
+        msg.style.color="red";
+        msg.style.fontSize ="30px";
+        msg.style.fontWeight ="bold";
+    }
+
+    function toggleMessage()
+    {
+        let msg = document.getElementById("message");
+        msg.style.display = msg.style.display === "none" ? "block":"none";
+    }
+</script>
+
+</body>
+</html>
+
+
+
+
+//create a form 
+user press the submit button of that form - change the color of the
+ button to green and the text of the button should change from SUBMIT TO
+ SUBMITTED.
+A message should be printed with alert - your form is submitted. 
+
+
+
+
